@@ -5,7 +5,7 @@
 
 async function chargerArticles() {
     try {
-        const response = await fetch("../data/articles.json")
+        const response = await fetch("./data/articles.json")
         if (!response.ok) {
             throw new Error("Error: " + response.status)
         }
