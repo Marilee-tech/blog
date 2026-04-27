@@ -1,0 +1,152 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+header {
+    background: url(/assets/images/hero_3.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    /* linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), */
+}
+
+
+
+nav {
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+
+.links ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 50px;
+    padding-left: 25%;
+    padding-top: 10px;
+}
+
+.links li {
+    list-style-type: none;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+    padding-bottom: 0.5em;
+    background-size: 0% 0.1em;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(68, 67, 67);
+    font-size: 80px;
+
+}
+
+
+.terracota-line {
+    border: 1.5px solid #eab5a4;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+
+#article-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.article p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.article {
+    background: #f5f1ee;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.article h3 {
+    margin-bottom: 10px;
+}
+
+main {
+    background-color: white;
+}
+
+.btn-retour {
+    display: block;
+    margin: 10px auto 0 auto;
+    padding: 10px 15px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    border: none;
+    background: #d8a48f;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #c68b75;
+
+}
+
+footer {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    background-color: #bdd1b6;
+    padding: 40px;
+}
+
+/* Responsive  */
+
+@media (max-width: 785px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .article h1 {
+        font-size: 25px;
+    }
+
+    .article p {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+}
